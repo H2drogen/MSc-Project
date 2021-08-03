@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CodeVisio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Code Visio</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Home
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Algorithms</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Sorting
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Bubble Sort</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Quick Sort</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Complexity
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Big O
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">401 Page</a>
+                                            <a class="nav-link" href="404.html">404 Page</a>
+                                            <a class="nav-link" href="500.html">500 Page</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Data Structures</div>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Trees
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Lists
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Loukas Tsouroplis
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Home Page</h1>
+
+   
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        Area Chart Example
+                                    </div>
+                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Bar Chart Example
+                                    </div>
+                                    <div class="card-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <h1>Linked List</h1>
+                                <canvas id="canvas">
+
+                                </canvas>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <h1>Binary Tree</h1>
+                                <input id='tree-input' type='number' placeholder='Enter number'>
+                                <button id='add-to-tree' onclick="addToTree()">Add To Tree</button>
+
+                                <canvas id="my-canvas" width="400" height="400">
+
+                                </canvas>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <h1>Array</h1>
+
+
+                                <canvas id="canvas3" width="400" height="400">
+
+                                </canvas>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <h1>Bubble Sort</h1>
+
+
+                                <canvas id="canvas4" width="400" height="400">
+
+                                </canvas>
+                            </div>
+
+                        </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="anime.min.js"></script>
+        <script>
+            var Shape=Shape || {
+	x:0,
+	y:0,
+	w:0,
+	h:0,
+	t:0,
+	rects:[],
+	create:function(){
+		var obj=Object.create(this);
+		return obj;
+	},
+	add:function(x,y,w,h,t){
+		this.x=x;
+		this.y=y;
+		this.w=w;
+		this.h=h;
+		this.t=t;
+		this.rects.push({x,y,w,h,t});
+	},
+	draw:function(context,text){
+		for (var i in this.rects) {
+        oRec = this.rects[i];
+        context.fillStyle = 'red'
+        context.fillRect(oRec.x, oRec.y, oRec.w, oRec.h);
+   			context.fillText(oRec.t, oRec.x,oRec.y);
+        context.beginPath();
+	      context.moveTo(oRec.x+oRec.w/2,oRec.y+oRec.h/2);
+	      context.lineTo(oRec.x+100,oRec.y+12);
+	      context.stroke();
+	      context.closePath();
+	      if(i==this.rects.length){
+
+	      }
+   
+
+    }
+	}
+
+};
+
+	  var canvas=document.getElementById("canvas");
+	  var ctx=canvas.getContext("2d");
+	  var h=canvas.width=window.innerWidth;
+	  var w=canvas.height=window.innerHeight;
+	  var node=Shape.create();
+	  node.add(10, 100, 25, 25,1)
+	  node.add(100,100, 25, 25,2)
+	  node.add(200,100, 25, 25,3)
+	  node.add(300,100, 25, 25,4)
+	  node.add(400,100, 25, 25,5)
+	  node.add(500,100, 25, 25,6)
+    // NOTE THAT THE FIRST NODE IS NOT SUPPOSED TO BE DRAWN - but it is, isn't it?
+	  //node.draw(ctx);
+    
+    var node2=Shape.create();
+	  node2.add(10, 300, 25, 25,7)
+	  node2.add(100,300, 25, 25,8)
+	  node2.add(200,300, 25, 25,9)
+	  node2.add(300,300, 25, 25,10)
+	  node2.add(400,300, 25, 25,11)
+	  node2.add(500,300, 25, 25,12)
+	  node2.draw(ctx);
+
+      // Represents the node in the tree. Will be displayed as a small circle in the browser.
+// x, y --> x, y co-ordinates of the center of circle
+// r    --> radius of the circle
+// ctx  --> context of the canvas
+// data --> data to be displayed (Only number)
+
+var Node = function(x,y,r, ctx, data) {
+  // left child of a node
+  this.leftNode = null; 
+  // right child of a node
+  this.rightNode = null;
+  
+  // draw function. Responsible for drawing the node
+  this.draw = function() {
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, 2*Math.PI); 
+    ctx.stroke();
+    ctx.closePath();
+    ctx.strokeText(data, x, y);
+  };
+  
+  // Simple getters
+  this.getData = function() { return data; }; 
+  this.getX = function() { return x; };
+  this.getY = function() { return y; };
+  this.getRadius = function() { return r; };
+  
+  // Returns coordinate for the left child
+  // Go back 3 times radius in x axis and 
+  // go down 3 times radius in y axis
+  this.leftCoordinate = function() {
+    return {cx: (x - (3*r)), cy: (y + (3*r))}
+  };
+  // Same concept as above but for right child        
+  this.rightCoordinate = function() {
+    return {cx: (x + (3*r)), cy: (y+(3*r))}
+  };
+};
+
+// Draws a line from one circle(node) to another circle (node) 
+var Line = function() {
+  // Takes 
+  // x,y      - starting x,y coordinate
+  // toX, toY - ending x,y coordinate
+  this.draw = function(x, y, toX, toY, r, ctx) {
+    var moveToX = x;
+    var moveToY = y + r;
+    var lineToX = toX;
+    var lineToY = toY - r;
+    ctx.beginPath();
+    ctx.moveTo(moveToX, moveToY);
+    ctx.lineTo(lineToX, lineToY);
+    ctx.stroke(); 
+  };
+};
+
+// Represents the btree logic
+var BTree = function() {
+  var c = document.getElementById('my-canvas');
+  var ctx = c.getContext('2d');
+  var line = new Line();
+  this.root = null;
+  
+  var self = this;
+  
+  // Getter for root
+  this.getRoot = function() { return this.root; };
+  
+  // Adds element to the tree
+  this.add = function( data) {
+    // If root exists, then recursively find the place to add the new node
+    if(this.root) {
+      this.recursiveAddNode(this.root, null, null, data);  
+    } else {
+    // If not, the add the element as a root 
+      this.root = this.addAndDisplayNode(200, 20, 15, ctx, data);
+      return;
+    } 
+  };
+
+  // Recurively traverse the tree and find the place to add the node
+  this.recursiveAddNode = function(node, prevNode, coordinateCallback, data) {
+    if(!node) {
+      // This is either node.leftCoordinate or node.rightCoordinate
+      var xy = coordinateCallback();
+      var newNode = this.addAndDisplayNode(xy.cx, xy.cy, 15, ctx, data);
+      line.draw(prevNode.getX(), prevNode.getY(), xy.cx, xy.cy, prevNode.getRadius(), ctx)
+      return newNode; 
+    } 
+    else {
+      if(data <= node.getData()) {
+        node.left = this.recursiveAddNode(node.left, node, node.leftCoordinate, data);
+      } 
+      else {
+        node.right = this.recursiveAddNode(node.right, node, node.rightCoordinate, data);
+      }
+      return node;
+    }
+  };
+  
+  // Adds the node to the tree and calls the draw function
+  this.addAndDisplayNode = function(x, y, r, ctx, data) {
+    var node = new Node(x, y, r, ctx, data);
+    node.draw();
+    return node;
+  };
+};
+
+var addToTree = function() {
+  input = document.getElementById('tree-input');
+  value = parseInt(input.value);
+  if(value)
+    btree.add(value);
+  else
+    alert("Wrong input");
+};
+
+var btree = new BTree();
+var bw = 400;
+var bh = 400;
+var p = 10;
+//size of canvas
+var cw = bw + (p*2) + 1;
+var ch = bh + (p*2) + 1;
+
+var canvas = document.getElementById("canvas3");
+
+var context = canvas.getContext("2d");
+
+function drawBoard(){
+    for (var x = 0; x <= bw; x += 40) {
+        context.moveTo(0.5 + x + p, p);
+        context.lineTo(0.5 + x + p, bh + p);
+    }
+
+
+    for (var x = 0; x <= bh; x += 40) {
+        context.moveTo(p, 0.5 + x + p);
+        context.lineTo(bw + p, 0.5 + x + p);
+    }
+
+    context.strokeStyle = "black";
+    context.stroke();
+}
+
+drawBoard();
+
+canvas = document.getElementById("canvas4");
+
+ctx = canvas.getContext("2d");
+const ACTIONS = {
+  SORT: "SORT",
+  COMPARE: "COMPARE",
+  SWAP: "SWAP",
+};
+
+const actionsMap = {
+  [ACTIONS.SORT]: (action, members) => members[action.data].sorted(),
+  [ACTIONS.SWAP]: (action, members) => {
+    const [i, j] = action.data;
+    let tmp = members[i].getValue();
+    members[i].setValue(members[j].getValue(), "red");
+    members[j].setValue(tmp, "yellow");
+  },
+  [ACTIONS.COMPARE]: (action, members) => {
+    const [i, j] = action.data;
+    members[i].setColor("blue");
+    members[j].setColor("blue");
+  },
+};
+
+const shuffledArrayInRange = (bottom = 1, top = 20) => {
+  const arr = [];
+  for (let i = bottom; i < top; i++) arr.push(i);
+  return arr.sort((a, b) => (Math.random() > 0.5 ? 1 : -1));
+};
+const bubbleSort = (array, onAction) => {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      onAction({ type: ACTIONS.COMPARE, data: [j, j + 1] });
+      if (array[j] > array[j + 1]) {
+        let tmp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = tmp;
+        onAction({ type: ACTIONS.SWAP, data: [j, j + 1] });
+      }
+    }
+    onAction({ type: ACTIONS.SORT, data: array.length - i - 1 });
+  }
+  return array;
+};
+
+function ArrayMember(x, y, width, height, color = "gray") {
+  this.x = x;
+  this.y = y;
+  this.width = width;
+  this.height = height;
+  this.color = color;
+
+  this.draw = () => {
+    ctx.fillStyle = this.color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+  };
+
+  this.resetColor = () => this.setColor("gray");
+
+  this.setColor = (color) => {
+    if (!this.isSorted()) {
+      this.color = color;
+    }
+  };
+
+  this.isSorted = () => this.color === "green";
+
+  this.sorted = () => (this.color = "green");
+
+  this.setValue = (v, color) => {
+    if (!this.isSorted()) {
+      this.height = v;
+      this.setColor(color);
+    }
+  };
+  this.getValue = (v) => this.height;
+}
+
+const randomArray = shuffledArrayInRange();
+const arrayMembers = randomArray.map((v, i) => {
+  return new ArrayMember(10 * i + i, 0, 10, v * 5);
+});
+
+const drawAll = () => arrayMembers.forEach((m) => m.draw());
+
+drawAll();
+
+let ticks = 0;
+const speed = 55;
+
+bubbleSort(randomArray, (action) => {
+  ticks++;
+  setTimeout(() => {
+    actionsMap[action.type](action, arrayMembers);
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    drawAll(arrayMembers);
+    arrayMembers.forEach((m) => m.resetColor());
+  }, ticks * speed);
+});
+        </script>
+    </body>
+</html>
